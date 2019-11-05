@@ -1,0 +1,12 @@
+HashMap : put(key,value), get(key), int size(), for(Map.Entry entry : hm.entrySet()){ sop(entry.getKey() + entry.getValue()); },
+          hm.keySet(), hm.values(), hm.putAll(Map m2) copies all key value pairs to a new map m2.
+LinkedHashMap: maintains insertion order of elements based on key, 
+               Can contain 1 null key and multiple null values, 
+               non synchronized.
+
+
+TreeMap : Does not maintain insertion order of elements, map is sorted according to the natural ordering of its keys(by default ascending order) or by using comparator which should be provided at map creation time,
+          No null key allowed NullPointerException thrown, Multiple null values are allowed
+          non synchronized.
+      
+           NavigableMap map1 = treemap.descendingMap(); 
