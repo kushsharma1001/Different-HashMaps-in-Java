@@ -1,12 +1,16 @@
 HashMap : put(key,value), get(key), int size(), for(Map.Entry entry : hm.entrySet()){ sop(entry.getKey() + entry.getValue()); },
           hm.keySet(), hm.values(), hm.putAll(Map m2) copies all key value pairs to a new map m2.
+          
+          
 LinkedHashMap: maintains insertion order of elements based on key, 
                Can contain 1 null key and multiple null values, 
                non synchronized.
 
 
-TreeMap : Does not maintain insertion order of elements, map is sorted according to the natural ordering of its keys(by default ascending order) or by using comparator which should be provided at map creation time,
+TreeMap : Does not maintain insertion order of elements, map is sorted according to the natural ordering of its keys(by default ascending             order) or by using constructor of class which implements comparator and overrides compare(Obj1, Obj2) method and this constructor           to be provided at map creation time. eg: TreeMap tm = new TreeMap(new TreeCompare());
           No null key allowed NullPointerException thrown, Multiple null values are allowed
           non synchronized.
       
-           NavigableMap map1 = treemap.descendingMap(); 
+           NavigableMap map1 = treemap.descendingMap(); //sorts map in desc order and returns a NavigableMap again. We can apply Map.Entry            on NavigableMap also like for(NavigableMap.Entry entry: map1.entrySet()){...}
+           
+           We also can do: NavigableSet set1 = treemap.descendingKeySet(); //only keys in desc order are returned not both key-values here.
