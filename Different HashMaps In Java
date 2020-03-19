@@ -24,3 +24,5 @@ TreeMap : Does not maintain insertion order of elements, map is sorted according
 
 
 All these 3 types of HashMap can be synchronized by : Map m = Collections.synchronizedMap(new HashMap(...));
+
+Making HashMap Final: https://stackoverflow.com/questions/7996499/creating-hashtable-as-final-in-java/7996516
