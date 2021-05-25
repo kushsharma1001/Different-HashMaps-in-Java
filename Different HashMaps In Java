@@ -6,7 +6,7 @@ HashMap : Insertion order is not maintained.
           hm.keySet(), hm.values(), hm.putAll(Map m2) copies all key value pairs to a new map m2, getOrDefault(Object key, V defaultValue)
           
           
-LinkedHashMap: maintains insertion order of elements, 
+LinkedHashMap: maintains insertion order of elements (LinkedHashMap preserve the ordering of elements in which they are inserted), 
                Can contain 1 null key and multiple null values, 
                non synchronized.
 
